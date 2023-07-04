@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(99, 20, 20);
+}
+
+.base{
+    width: 800px;
+    height: 800px;
+    background: rgb(228, 197, 157);
+    margin: 20vh auto;
+    border-radius: 40px;
+    box-shadow: 50px 40px 50px;
+}
+
+label{
+    font-size: 44px;
+
+}
+
+.data{
+    background: none;
+    user-select: none;
+    width: 600px;
+    margin: auto;
+}
+
+#usrname, #pssword{
+    width: 300px;
+    font-size: 34px;
+    background: none;
+    border: 0;
+    border-bottom: 5px solid;
+    outline: 0;
+    margin-left: 5px;
+}
+
+.GAP{
+    height: 100PX;
+}
+
+.hd{
+    width: 160px ;
+    margin: auto 320px;
+    padding: 18% 0 13% 0;
+}
+#dh{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.submit{
+    font-size: 44px;
+    width: 250px;
+    margin-left: 170px;
+    margin-top: 80px;
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.submit:hover{
+    background: yellowgreen;
+    border: solid 2px;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 50px;
+    width: 280px;
+     margin-left: 155px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+    
+    .base{
+        margin-top: 10vh;
+    }
+}

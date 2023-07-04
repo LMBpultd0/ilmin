@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+text-decoration: none;
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color:aquamarine;
+}
+
+.top_nav{
+    width: 80%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.bsp>a{
+    color: bisque;
+    font-size: 1.7rem;
+}
+.top_nav>.bsp{
+  width: auto;
+  margin: 0 20px;
+  text-align: center;
+  line-height: 58px;
+}
+.leftnav{
+    display: none;
+}
+
+.mob-menu, .ma, .mb {display: none;}
+
+.bsp>a:hover{
+    color: yellowgreen;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+ .top_nav{display: none;}
+
+ .mob-menu{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 140px;
+    color: antiquewhite;
+ }
+
+ .leftnav{
+    float: left;
+    width: 75%;
+    color: bisque;
+    font-size: 36px;
+    padding-top: 25px;
+    text-align: center;
+    display: block;
+ }
+
+
+
+.m-menu{
+    float: right;
+    margin-top: 25px;
+    background-color: transparent;
+    border: none;
+ }
+
+ #menu{
+    width: 75px;
+    margin-top:14px;
+ }
+
+.aa{
+    width: 90px;
+    border: solid 7px white;
+    margin: 12px 50px 0 0 ;
+    border-radius: 40px;
+
+}
+
+#menu-data{
+    width: 700px;
+    height: 1110px;
+    margin: 6px auto;
+    display: none;
+    background-color: rgb(10, 10, 10);
+    animation-name: menu;
+    animation-duration: 1200ms;
+    text-align: center;
+    font-size: 55px;
+    border-radius: 40px;
+}
+@keyframes menu {
+    from { 
+        width: 0px;
+        height: 0;
+        margin-top: 0px;
+        background-color: rgb(54, 54, 4);
+    }
+   
+}
+
+ .mb>a {color: aliceblue;}
+
+.ma{
+    display: block;
+    height: 1cm;
+}
+
+.mb{
+    margin-bottom: 1.5cm;
+    animation-name: mb;
+    animation-duration: 1200ms;
+    display: block;
+}
+@keyframes mb {
+    from{
+       font-size: 0px;
+       margin-top: -200px;
+    }
+    
+}
+
+.mb>a:hover{
+    background-color: yellowgreen;
+    padding: 10px 25px;
+    border-radius: 40px;
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+}

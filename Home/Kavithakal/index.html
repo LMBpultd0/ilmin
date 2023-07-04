@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Malayalam Kavithakal </title>
+    <link rel="stylesheet" href="css/home-kavitha.css">
+</head>
+<body>
+    
+<div class="topnav">
+<div class="left">Spread love everywhere you go. Let no one ever come to you without leaving happier. <br><i>Mother Teresa</i></div>
+
+<div class="menav">
+    <div onclick="myFunction()" class="menu" id="menu">
+    <div class="ax"></div>
+    <div class="ax"></div>
+    <div class="ax"></div>
+</div>
+</div></div>
+
+
+
+
+<div id="animatedDiv"> 
+    <div id="a">
+        <p><a href="../../index.html" id="men" class="topmen">Home</a>
+            <p><a href="../News/index.html" id="men">Today News</a><br>
+                <p><a href="http://lmbpultd.free.nf/" id="men">e-Books</a><br>
+                    <p><a href="../Kavithakal/index.html" id="men">Kavithakal</a><br>
+                        <p><a href="../Education/index.html" id="men">Education</a><br>
+                            <p><a href="../Education/PRQ/index.html" id="men">Quistion Bank</a><br>
+    </div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var animateButton = document.getElementById('menu');
+var animatedDiv = document.getElementById('animatedDiv');
+animateButton.addEventListener('click', function() {
+  animatedDiv.classList.toggle('animate');
+});
+
+
+function myFunction() {
+  var x = document.getElementById("a");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+</body>
+</html>
