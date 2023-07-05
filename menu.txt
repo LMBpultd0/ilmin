@@ -1,3 +1,80 @@
+  
+<div class="topnav">
+<div class="left">Spread love everywhere you go. Let no one ever come to you without leaving happier. <br><i>Mother Teresa</i></div>
+
+<div class="menav">
+    <div onclick="myFunction()" class="menu" id="menu">
+    <div class="ax"></div>
+    <div class="ax"></div>
+    <div class="ax"></div>
+</div>
+</div></div>
+
+
+
+
+<div id="animatedDiv"> 
+    <div id="a">
+        <p><a href="" id="men" class="topmen">Home</a>
+            <p><a href="" id="men">Today News</a><br>
+                <p><a href="" id="men">e-Books</a><br>
+                    <p><a href="" id="men">Kavithakal</a><br>
+                        <p><a href="" id="men">Education</a><br>
+                            <p><a href="" id="men">Quistion Bank</a><br>
+    </div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var animateButton = document.getElementById('menu');
+var animatedDiv = document.getElementById('animatedDiv');
+animateButton.addEventListener('click', function() {
+  animatedDiv.classList.toggle('animate');
+});
+
+
+function myFunction() {
+  var x = document.getElementById("a");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -55,7 +132,7 @@ a{text-decoration: none;}
     float: none;
     width: 0px;
     background-color: rgb(143, 32, 32);
-    transition: all 1s ease;
+    transition: all 2s ease;
     margin: auto;
     text-align: center;
 }
@@ -84,16 +161,9 @@ p{
     border-radius: 40px;
 }
 
-.deskmen{
-    display: none;
-}
 
-.body-data{
-    width: 95%;
-    border: solid 1px black;
-    min-height: 250px;
-    margin: 15px auto;
-}
+
+
 
 
 
@@ -122,26 +192,9 @@ p{
         display: none;
 }
 
-.deskmen{
-    display: block;
-    width: 100%;
-    
-}
-.mdes{
-    font-size: 30px;
-    margin-left: 30px;
-    color: rgb(218, 225, 231); 
-    float: left;
-}
 
-a.mdes:hover{
-    font-size: 30px;
-    margin-left: 30px;
-    color: rgb(224, 228, 231);
-     background-color: rgb(44, 100, 100);
-     padding: 2px 15px;
-     border-radius: 40px;
-}
 
 
 }
+
+
