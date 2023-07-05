@@ -90,15 +90,32 @@ p{
 
 .body-data{
     width: 95%;
-    border: solid 1px black;
     min-height: 250px;
     margin: 15px auto;
+    font-size: 30px;
+
 }
 
+h1{
+    font-size: 55px;
+}
+.ssp{ height: 50px;}
 
+.body-data>a{
+    margin-left: 10px;
+    font-size: 30px;
+}
 
+.bbsp{ height: 200px;}
 
+.body-data>a:hover{
+    border-bottom: 3px solid black;
+    padding-bottom: 2px;
+}
 
+.body-data>a:visited{
+    color: rgb(95, 91, 91);
+}
 
 
 @media screen and (min-width: 1100px) {
@@ -143,5 +160,12 @@ a.mdes:hover{
      border-radius: 40px;
 }
 
+.body-data>a{
+    font-weight: bold;
+    color: black;
+}
+.body-data>a:hover{
+    padding-bottom: 5px;
+}
 
 }
