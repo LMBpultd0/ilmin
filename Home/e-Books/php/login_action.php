@@ -9,7 +9,7 @@ $result=mysqli_query($conn,$sql);
 $resultchek=mysqli_num_rows($result);
 if($resultchek>0)
 {
-  header('Location: book1.html');
+  header('Location: ../home/book1.html');
 }
 else
 {
