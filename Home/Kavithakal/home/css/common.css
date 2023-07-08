@@ -14,9 +14,9 @@ body{
 }
 
 h1{
-    font-size: 80px;
-    margin-top: 50px;
+   margin-top: 50px;
     margin-left: 50px;
+    text-align: center;
 }
 
 .head_p{
@@ -30,14 +30,15 @@ h1{
     margin: 20px auto;
     width: 95%;
     text-align: center;
+    word-wrap: break-word;
 }
 
 h3{
     font-size: 35px;
-    margin: 160px 0 35px 0;
+    margin: 160px 0 40px 0;
 }
 
-.bbsp{height: 150px;}
+.bbsp{height: 250px;}
 
 p{
     margin-top: 50px;
@@ -47,9 +48,12 @@ p{
     margin-left: 20px;
 }
 
+.head_p{
+    margin-top: 300px;
+}
 .bio{
-    width: 98%;
-    margin: auto;
+    width: 93%;
+    margin: 40px auto;
     text-align: justify;
 }
 
@@ -62,10 +66,18 @@ p{
     padding-bottom: 5px;
 }
 
+img{
+    width: 300px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
 
-
-
-
+.discription{
+    width: 98%;
+    margin: 0 auto;
+    text-align: justify;
+}
 
 @media screen and (min-width: 1100px) {
     h1{
@@ -75,6 +87,11 @@ p{
 
     p{
         margin-top: 30px;
+    }
+
+    .body_para{
+        width: 700px;
+        line-height: 1.6;
     }
 }
 
