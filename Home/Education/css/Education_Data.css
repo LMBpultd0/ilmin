@@ -1,0 +1,74 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.edata{
+ width: 95%;
+ margin: 25px auto;
+ font-family: 'lobster';
+
+}
+
+details{
+    margin: 40px auto;
+    background: none;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+summary{
+    color: #000;
+    font-size: 50px;
+}
+
+summary:hover{
+    color: #000;
+    font-size: 60px;
+    transition: all 300ms;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+#spt{
+    height: 50px;
+}
+
+summary::marker{
+    content: "";
+}
+
+details>p{
+    margin: 30px;
+}
+
+details>p>button>a{
+    font-size: 30px;
+    color: #000;
+    font-family: 'lobster';
+}
+
+
+details>p>button>a:hover{
+    font-size: 30px;
+    color: #3f1010;
+    border-bottom: 3px solid;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+#XI-T, #XII-T, #bcom-T, #mcom-T {
+    margin-bottom: 20px;
+}
