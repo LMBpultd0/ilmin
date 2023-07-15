@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/Education.css">
     <link rel="stylesheet" href="css/Education_Data.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <script src="java/button_click.js"></script>
 </head>
 <body>
     
@@ -55,7 +56,7 @@
   <details>
       <summary id="xsp"> S S L C </summary>
       <p>
-        <button id="X"> <a href=""><abbr title=" Some text books are available under standard X">Text Book</abbr></a></button>
+        <button  onclick="myFunctiona()" id="X"> <a href="#sslc"><abbr title=" Some text books are available under standard X">Text Book</abbr></a></button>
       </p>
 
 
@@ -139,6 +140,50 @@
 
 
 <!-- conten datas hide button view before -->
+<p class="gap"></p>
+
+<div id="sslc">
+
+  <h1> Class X<sup>th</sup> State Sylabus Text Books</h1>
+  <div class="sslc-T">  <div class="a" id="hd">Subject's</div> <div class="b" id="shd">Malayalam <br> Medium</div> <div class="c" id="shd">English <br> Medium</div></div> 
+
+  <p></p>
+
+  
+  
+  <div class="sslc-T">  <div class="a"> Malayalam 1</div> <div class="b"> <details> <summary>Malayalam</summary> <p style="width: 500px; margin-bottom: 0; "> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/MalayalamAT_1/MalayalamAT_1.pdf">Part 1</a></button>  <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Malayalam_AT_Malayalam_2/Malayalam_AT_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c" style=" visibility: hidden;"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="">Part 1</a></button> <br> <button class="part"><a href=""> Part 2</a></button></p> </details> </div></div>  <br>
+
+  <div class="sslc-T">  <div class="a"> Malayalam 2</div> <div class="b"> <details> <summary>Malayalam</summary> <p style="width: 400px;"> <button class="part"></button><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/MalayalamBT_1/MalayalamBT_1.pdf">single part</a></p> </details> </div> <div class="c" style=" visibility: hidden;"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="">Part 1</a></button> <br> <button class="part"><a href=""> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a"> English  </div> <div class="b" style=" visibility: hidden;"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="">Part 1</a></button> <br><button class="part"><a href=""> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p style="width: 500px; margin-left: -250px;"> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/EnglishReader_1/EnglishReader_1.pdf">Part 1</a></button> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/English_English_2/English_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a"> Mathematics  </div> <div class="b"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Mathematics_Mal_1/Mathematics_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Maths_Malayalam_2/Maths_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Mathematics_Eng_1/Mathematics_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Maths_English_2/Maths_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a">  Biology </div> <div class="b"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Biology_Mal_1/Biology_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Biology_Malayalam_2/Biology_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Biology_Eng_1/Biology_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Biology_English_2/Biology_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a">  Physics </div> <div class="b"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Physics_Mal_1/Physics_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Physics_Malayalam_2/Physics_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Physics_Eng_1/Physics_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Physics_English_2/Physics_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a">  Chemistry </div> <div class="b"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Chemistry_Mal_1/Chemistry_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Chemistry_Malayalam_2/Chemistry_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Chemistry_Eng_1/Chemistry_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/Chemistry_English_2/Chemistry_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a">  Social Science 1	 </div> <div class="b"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/SocialScienceI_Mal_1/SocialScienceI_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/SS1_Malayalam_2/SS1_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/SocialScience1_Eng_1/SocialScience1_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/SS1_English_2/SS1_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a"> Social Science 2	  </div> <div class="b"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/SocialScience2_Mal_1/SocialScience2_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/SS2_Malayalam_2/SS2_Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/SocialScience2_Eng_1/SocialScience2_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/SS2_English_2/SS2_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a"> Information Technology  </div> <div class="b" id="mss"> <details> <summary>Malayalam</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/ICT_Mal_1/ICT_Mal_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/ICT_%20Malayalam_2/ICT_%20Malayalam_2.pdf"> Part 2</a></button></p> </details> </div> <div class="c" id="mss"> <details> <summary id="mob">English</summary> <p> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/ICT_Eng_1/ICT_Eng_1.pdf">Part 1</a></button> <br> <button class="part"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/VOL_2_10/ICT_English_2/ICT_English_2.pdf"> Part 2</a></button></p> </details> </div></div>  <br>
+  
+  
+  <div class="sslc-T">  <div class="a"> Health & Physical Education  </div> <div class="b" id="msd"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Health&Physical_Mal_1/Health_Physical_Mal_X.pdf"> Malayalam</a></div> <div class="c" id="msd"><a href="https://samagra.kite.kerala.gov.in/files/samagra-resource/uploads/tbookscmq/Std_10/Health&Physical_Eng_1/Health&Physical_Eng_1.pdf">English</a></div></div>  <br>
+
+
+</div>
 
 
 
@@ -177,7 +222,7 @@
 </div>
 
 
-
+<div class="bottomgap"></div>
 
 
 
