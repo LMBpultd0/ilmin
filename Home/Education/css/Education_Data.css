@@ -43,7 +43,7 @@ summary::marker{
     content: "";
 }
 
-details>p{
+.flex>details>p{
     display: grid;
     margin: 30px;
 }
@@ -85,7 +85,7 @@ button{
 .b>details>summary, .c>details>summary{
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #d61b1b;
     font-size: 2rem;
 }
 
@@ -102,7 +102,7 @@ button{
 
  .a{
     width: 290px;
-    text-align: center;
+    text-align: left;
     margin-left: -40px;
 }
 
@@ -113,6 +113,10 @@ button{
 
 #hd, #shd{
     font-size: 2.4rem;
+}
+
+#hd {
+    margin-top: 25px;
 }
 
 .gap{
@@ -152,6 +156,93 @@ details>p>br{
 
 #sslc{
     display: none;
+    margin-bottom: 300px;
+}
+
+.XI-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+#XItext{
+    margin-bottom: 300px;
+    display: none;
+}
+
+#XItext>h1{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.xa{
+    width: 300px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.xa, .xb, .xc{
+    font-size: 2rem;
+}
+
+.xb>a:hover, .xc>a:hover{
+    color: brown;
+    border-bottom: solid;
+}
+
+.ia{
+    text-align: left;
+    font-size: 2rem;
+    width: 300px;
+    padding-left: 15px;
+}
+
+.ib, .ic {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.XII-TT{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+#XIItext>h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.ib>details>p, .ic>details>p {
+    display: grid;
+    margin-top: 25px;
+}
+
+.ib>details>summary, .ic>details>summary{
+    font-size: 2rem;
+    color: #ff0000;
+}
+
+.ib>details, .ic>details{
+    margin-top: -10px;
+}
+
+.ib>details>summary:hover, .ic>details>summary:hover{
+      font-size: 2.3rem;
+      color: #ffffff;      
+}
+
+
+.ib>details>p>button, .ic>details>p>button{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -161,9 +252,12 @@ details>p>br{
 
 
 
-.bottomgap{
-    height: 500px;
-}
+
+
+
+
+
+
 
 @media screen and (max-width: 1100px) {
  
@@ -239,6 +333,11 @@ details>p>br{
 }
 #mss{
     margin-top: 30px;
+}
+
+#eng.sslc{
+    width: 500px; 
+    margin-left: -250px;
 }
 
 }
