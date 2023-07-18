@@ -1,0 +1,22 @@
+body{
+    background-color: lemonchiffon;
+}
+
+
+
+summary::marker{content: "";}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1110px) {
+    
+    h2{
+            font-size: 4vw;
+    }
+}
