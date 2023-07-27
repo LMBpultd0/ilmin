@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(86, 19, 241);
+}
+
+.home{
+    background-color: lightblue;
+    border: none;
+    width: 95%;
+    min-height: 400px;
+    margin: auto;
+    border-radius: 40px;
+}
+
+h1{
+    text-align: center;
+    transform: scaleY(1.2);
+    font-size: 3vw;
+    padding-top: 25px;
+}
+
+.p{
+    font-size: 2vw;
+    margin: 15px;
+    width: fit-content;
+    margin: 25px auto;
+    line-height: 1.6;
+    transform: scaleY(1.1);
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 500;
+}
