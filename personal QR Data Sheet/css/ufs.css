@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     background-color: rgb(241, 236, 184);
+    
 }
 
 #top{
     text-align: center;
-font-size: 50px;
-text-decoration: underline dotted 20px blueviolet;
+    font-size: 50px;
+    text-decoration: underline dotted 20px blueviolet;
 }
 
 .body{
-margin: auto;
-width: 94%;
-margin-top: 80px;
-margin-left: 3%;
-margin-bottom: 10vh;
+    margin: auto auto;
+    width: 94%;
+    margin-top: 80px;
+    margin-left: 3%;
+    margin-bottom: 10vh;
 }
 
 li{
@@ -48,5 +50,15 @@ button, button:hover{
 
 table{
     margin-bottom: 26px;
+
+}
+
+
+@media screen and (min-width: 820px) {
+    .body{
+        margin: auto;
+        margin-top: 7vh;
+        width: 35%;
+    }
 
 }

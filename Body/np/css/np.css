@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 2%, 56%);
+}
+
+.dl{
+    margin: auto auto;
+    margin-top: 5vh;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.dl>a>button{
+    height: 50px;
+    padding: 0 20px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-right: 1vw;
+    background-color: aqua;
+    border-radius: 12px;
+
+}
+
+.h {
+    margin: auto auto;
+    margin-top: 3vh;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 820px){
+    *{
+        background-color: aquamarine;
+
+    }
+    .dl>a>button{
+        width: 180px;
+        height: 60px;
+    }
+
+}
