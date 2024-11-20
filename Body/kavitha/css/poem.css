@@ -1,3 +1,30 @@
 *{
     background-color: rgb(221, 245, 197);
 }
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li{
+    margin-top: 2vh;
+}
+h1{
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.body{
+    margin-top: 5vh;
+}
+@media screen and (min-width: 820px){
+    li{
+        margin-top: 3vh;
+    }
+
+    h1{text-align: left;}
+    .body{
+        margin-top: 8vh;
+    }
+}
