@@ -1,0 +1,45 @@
+*{
+    background-color: rgb(178, 199, 199);
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(143, 7, 7);
+}
+
+li{
+    margin-top: 15px;
+}
+
+
+.body{
+    margin-bottom: 10vh;
+}
+
+ol{
+    margin-bottom: 10vh;
+   
+}
+
+
+
+@media screen and (min-width: 820px){
+h1{
+    text-align: left;
+    margin-left: 20px;
+}
+
+li{
+    margin-top: 25px;
+}
+
+
+
+}
