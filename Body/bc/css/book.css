@@ -67,10 +67,8 @@ img{
     height: 314px;
 }
 
-.bot{
-    height: 5vh;
-    width: 100%;
-    display: block;
+.momb{
+    margin-bottom: 5vh;
 }
 
 
@@ -99,5 +97,9 @@ img{
    button{
     height: 100px;
    }
+
+   .momb{
+    margin-bottom: 0;
 }
 
+}
