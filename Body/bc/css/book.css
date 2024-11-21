@@ -67,6 +67,9 @@ img{
     height: 314px;
 }
 
+.bot{
+    height: 100px;
+}
 
 
 @media screen and (min-width: 820px) {
