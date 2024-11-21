@@ -68,7 +68,9 @@ img{
 }
 
 .bot{
-    height: 100px;
+    height: 5vh;
+    width: 100%;
+    display: block;
 }
 
 
