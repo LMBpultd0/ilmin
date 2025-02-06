@@ -1,0 +1,32 @@
+name: Update Index on Upload
+
+on:
+  push:
+    paths:
+      - "ilmin/usr_upload/**"  # Trigger when files are added to usr_upload/
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Generate File List
+        run: |
+          FILES=$(ls ilmin/usr_upload)
+          echo "<!DOCTYPE html>" > ilmin/usr_upload/index.html
+          echo "<html><head><title>File List</title></head><body>" >> ilmin/usr_upload/index.html
+          echo "<h2>Uploaded Files</h2><ul>" >> ilmin/usr_upload/index.html
+          for file in $FILES; do
+            echo "<li><a href='/ilmin/usr_upload/$file'>$file</a></li>" >> ilmin/usr_upload/index.html
+          done
+          echo "</ul></body></html>" >> ilmin/usr_upload/index.html
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add ilmin/usr_upload/index.html
+          git commit -m "Auto-update index.html"
+          git push
