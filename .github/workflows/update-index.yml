@@ -23,8 +23,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "LMBpultd0"
+          git config --global user.email "web.lmbpultd.2023@gmail.com"
           git add usr_upload/index.html
           git commit -m "Automatically updated index.html"
           git push
