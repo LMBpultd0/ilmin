@@ -1,32 +1,47 @@
-name: Update Index on Upload
+name: Update index.html
 
 on:
   push:
     paths:
-      - "ilmin/usr_upload/**"  # Trigger when files are added to usr_upload/
+      - 'usr_upload/**'
 
 jobs:
   update-index:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Generate File List
-        run: |
-          FILES=$(ls ilmin/usr_upload)
-          echo "<!DOCTYPE html>" > ilmin/usr_upload/index.html
-          echo "<html><head><title>File List</title></head><body>" >> ilmin/usr_upload/index.html
-          echo "<h2>Uploaded Files</h2><ul>" >> ilmin/usr_upload/index.html
-          for file in $FILES; do
-            echo "<li><a href='/ilmin/usr_upload/$file'>$file</a></li>" >> ilmin/usr_upload/index.html
-          done
-          echo "</ul></body></html>" >> ilmin/usr_upload/index.html
+    - name: List files in usr_upload
+      id: list-files
+      run: |
+        FILES=$(ls -1 usr_upload)
+        echo "::set-output name=files::${FILES}"
 
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add ilmin/usr_upload/index.html
-          git commit -m "Auto-update index.html"
-          git push
+    - name: Update index.html
+      run: |
+        echo "<!DOCTYPE html>" > index.html
+        echo "<html lang='en'>" >> index.html
+        echo "<head>" >> index.html
+        echo "  <meta charset='UTF-8'>" >> index.html
+        echo "  <meta name='viewport' content='width=device-width, initial-scale=1.0'>" >> index.html
+        echo "  <title>Uploaded Files</title>" >> index.html
+        echo "</head>" >> index.html
+        echo "<body>" >> index.html
+        echo "  <h1>Uploaded Files</h1>" >> index.html
+        echo "  <ul>" >> index.html
+        for file in ${{ steps.list-files.outputs.files }}; do
+          echo "    <li><a href='usr_upload/$file'>$file</a></li>" >> index.html
+        done
+        echo "  </ul>" >> index.html
+        echo "</body>" >> index.html
+        echo "</html>" >> index.html
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add index.html
+        git commit -m "Automatically updated index.html with new files"
+        git push
